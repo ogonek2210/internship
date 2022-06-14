@@ -60,7 +60,9 @@ jobs:
       
       # Set my favorite day
       - name: Set my favorite day
-        run: echo "DAY_OF_THE_MONTH::22" >> $GITHUB_ENV
+        run: |
+          DAY_OF_THE_MONTH=22
+          echo "DAY_OF_THE_MONTH=${DAY_OF_THE_MONTH}" >> $GITHUB_ENV
      
       # Current date and time
       - name: Current date and time
