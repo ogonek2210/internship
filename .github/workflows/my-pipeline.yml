@@ -17,7 +17,7 @@ on:
 
 env:
   YEAR: 2021
-  DEPLOY_VER: ${GITHUB_SHA::7}
+  DEPLOY_VER: "${{ github.sha }}"
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -55,14 +55,16 @@ jobs:
         MONTH: "October"
         
       steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
       
       # Set my favorite day
       - name: Set my favorite day
-        run: echo "22" >> $DAY_OF_THE_MONTH
+        run: echo "DAY_OF_THE_MONTH::22" >> $GITHUB_ENV
      
       # Current date and time
       - name: Current date and time
-        run: echo "NOW::$(date +'%Y-%m-%dT%H:%M:%S')"
+        run: echo "The currect date and time is $(date +'%Y-%m-%dT%H:%M:%S')"
       
       # Print variable’s content
       - name: Print variable’s content
