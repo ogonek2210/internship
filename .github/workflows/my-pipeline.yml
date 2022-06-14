@@ -53,7 +53,6 @@ jobs:
       
       env:
         MONTH: "October"
-        FAVORITE_DAY_OF_WEEK: ${{ secrets.FAVORITE_DAY_OF_WEEK }}
         
       steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
