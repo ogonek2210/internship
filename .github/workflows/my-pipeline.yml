@@ -65,7 +65,7 @@ jobs:
           echo "DAY_OF_THE_MONTH=${DAY_OF_THE_MONTH}" >> $GITHUB_ENV
      
       # Current date and time
-      - name: Current date and time
+      - name: Print the system date and time
         run: echo "The currect date and time is $(date +'%Y-%m-%dT%H:%M:%S')"
       
       # Print variable’s content
