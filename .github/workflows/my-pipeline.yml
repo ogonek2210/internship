@@ -53,6 +53,7 @@ jobs:
       
       env:
         MONTH: "October"
+        FAVORITE_DAY_OF_WEEK: ${{ secrets.FAVORITE_DAY_OF_WEEK }}
         
       steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -78,4 +79,4 @@ jobs:
       # Print my favorite day of week    
       - name: Print my favorite day of week
         run: |
-          echo "My favorite day of week is ${{secrets.FAVORITE_DAY_OF_WEEK}}" 
+          echo "My favorite day of week is $FAVORITE_DAY_OF_WEEK"
