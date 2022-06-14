@@ -1,0 +1,41 @@
+commit 48f2f48ce11f4772e87668063b3457ed936e731f
+Merge: 912ec71 46c0925
+Author: Anka <46241505+ogonek2210@users.noreply.github.com>
+Date:   Tue Jun 14 18:12:24 2022 +0300
+
+    Merge pull request #2 from ogonek2210/dev
+    
+    Merge all files from dev to master
+
+commit 46c092513578967a71ddd31d0e014262f9967fad
+Merge: 3a82995 1048c4a
+Author: Anka <46241505+ogonek2210@users.noreply.github.com>
+Date:   Tue Jun 14 18:09:45 2022 +0300
+
+    Merge pull request #1 from ogonek2210/anna-new_feature
+    
+    Moved all files from the anna-new_feature branch
+
+commit 1048c4a639a7e7b395b30c4f22157bd3c19fc824
+Author: Anka <46241505+ogonek2210@users.noreply.github.com>
+Date:   Tue Jun 14 18:06:47 2022 +0300
+
+    Create .gitignore
+
+commit e02c57c138101969d75f0eeba371864154f60e20
+Author: Anna Sitkevich <Hanna_Sitkevich@epam.com>
+Date:   Tue Jun 14 18:05:13 2022 +0300
+
+    Added gitignore file and changed README.md
+
+commit 3a829954a48e475f2df7d8ab53071788e3efa774
+Author: Anna Sitkevich <Hanna_Sitkevich@epam.com>
+Date:   Tue Jun 14 17:55:44 2022 +0300
+
+    Added File_Test.ps1
+
+commit 912ec71f596e740ef23f8f436e483ee9fbe3ae52
+Author: Anna Sitkevich <Hanna_Sitkevich@epam.com>
+Date:   Tue Jun 14 17:51:05 2022 +0300
+
+    Added task1 folder
