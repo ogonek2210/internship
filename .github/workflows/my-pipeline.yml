@@ -79,4 +79,5 @@ jobs:
       # Print my favorite day of week    
       - name: Print my favorite day of week
         run: |
-          echo "My favorite day of week is $FAVORITE_DAY_OF_WEEK"
+          echo "My favorite day of week:" 
+          echo ${{ secrets.FAVORITE_DAY_OF_WEEK }}
