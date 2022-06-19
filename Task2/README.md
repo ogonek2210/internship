@@ -1,8 +1,6 @@
-## Task2 ##
-ServerB web page:  
-http://20.230.172.43/
+# Task2 #
 
-### I have created two VM: ###
+### I have created two VMs: ###
 ServerA:
 1. Private IP:  10.0.0.4 
 2. Public IP: 20.119.203.63
