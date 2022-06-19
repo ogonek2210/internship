@@ -31,6 +31,10 @@ I have configured the Network security group for serverA and ServerB:
 ![serverB](./images/Screenshot_9.jpg)
 ![serverA](./images/Screenshot_12.jpg)
 
+I have configured the SSH between serverA and ServerB:
+![ssh1](./images/Screenshot_7.jpg)
+![ssh2](./images/Screenshot_8.jpg)
+
 ### ***Optional task*** ### 
 The web server Apache is added to the ServerB and I used for it **task.sh** script.
 
