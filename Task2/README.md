@@ -27,6 +27,10 @@ With the following properties:
 Ping ServerA and ServerB:
 ![cheking connection](./images/Screenshot_3.jpg)
 
+I have configured the Network security group for serverA and ServerB:
+![serverB](./images/Screenshot_9.jpg)
+![serverA](./images/Screenshot_12.jpg)
+
 ### ***Optional task*** ### 
 The web server Apache is added to the ServerB and I used for it **task.sh** script.
 
