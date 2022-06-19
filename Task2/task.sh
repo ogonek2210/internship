@@ -10,7 +10,7 @@ sudo apt-get update -y && apt-get upgrade -y
 echo
 echo
 echo "#########################################################"
-echo "############# Installing Apache2 with php ###############"
+echo "############# Installing Apache2 ########################"
 echo "#########################################################"
 echo
 echo
