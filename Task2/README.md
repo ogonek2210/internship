@@ -13,7 +13,7 @@ ServerA:
 ServerB:
 1. Private IP:  10.1.0.4 
 2. Public IP: 20.230.172.43
-3. 3. OS: Linux (centos 7.9.2009)
+3. OS: Linux (centos 7.9.2009)
 
 ![serverB](./images/Screenshot_11.jpg)
 
