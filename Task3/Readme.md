@@ -1,4 +1,4 @@
-*** Task 3: Terraform/IaC introduction *** 
+# Task 3: Terraform/IaC introduction #
 
 Tasks:
 1. Create EC2 Instance t2.micro: Ubuntu and CentOS
