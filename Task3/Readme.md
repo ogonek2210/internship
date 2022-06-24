@@ -9,4 +9,6 @@ Tasks:
 
 4. On EC2 Ubuntu install Docker, installation should be done according to the recommendation of the official Docker manuals 
  
+The configuration of the Ubuntu OS:
 
+![serverUbuntu](./images/Screenshot_3.png)
