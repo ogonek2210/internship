@@ -17,7 +17,9 @@ Tasks:
 
 ![serverUbintu3](./images/Screenshot_1.jpg)
 
-
+### The docker and apache were installed in the  Ubuntu OS: ###
+![docker](./images/Screenshot_7.jpg)
+![apache](./images/Screenshot_8.jpg)
 ### The configuration of the Centos OS: ###
 
 ![serverCentos1](./images/Screenshot_4.jpg)
