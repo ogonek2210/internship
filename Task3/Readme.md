@@ -7,8 +7,21 @@ Tasks:
 
 3. EC2 CentOS should not have access to the Internet, but must have outgoing and incoming access: ICMP, TCP/22, TCP/80, TCP/443 only on the local network where EC2 Ubuntu, EC2 CentOS is located.  On EC2 Ubuntu, install a web server (nginx/apache); Create a web page with the text “Hello World” and information about the current version of the operating system. This page must be visible from the Internet. 
 
-4. On EC2 Ubuntu install Docker, installation should be done according to the recommendation of the official Docker manuals 
- 
-The configuration of the Ubuntu OS:
+4. On EC2 Ubuntu install Docker, installation should be done according to the recommendation of the official Docker manuals.
 
-![serverUbuntu](./images/Screenshot_3.png)
+### The configuration of the Ubuntu OS: ###
+
+![serverUbuntu1](./images/Screenshot_3.jpg)
+
+![serverUbuntu2](./images/Screenshot_2.jpg)
+
+![serverUbintu3](./images/Screenshot_1.jpg)
+
+
+### The configuration of the Centos OS: ###
+
+![serverCentos1](./images/Screenshot_4.jpg)
+
+![serverCentos1](./images/Screenshot_5.jpg)
+
+![serverCentos1](./images/Screenshot_6.jpg)
