@@ -1,14 +1,15 @@
 # Task 3: Terraform/IaC introduction #
 
 Tasks:
-1. Create EC2 Instance t2.micro: Ubuntu and CentOS. Both instances must have a tag with names. 
+<p> 1. Create EC2 Instance t2.micro: Ubuntu and CentOS. Both instances must have a tag with names;</p>
 
-2. EC2 Ubuntu must have Internet access, there must be incoming access: ICMP, TCP/22, 80, 443, and any outgoing access. 
+<p> 2. EC2 Ubuntu must have Internet access, there must be incoming access: ICMP, TCP/22, 80, 443, and any outgoing access;</p>
 
-3. EC2 CentOS should not have access to the Internet, but must have outgoing and incoming access: ICMP, TCP/22, TCP/80, TCP/443 only on the local network where EC2 Ubuntu, EC2 CentOS is located.  
-4. On EC2 Ubuntu, install a web server (nginx/apache); Create a web page with the text “Hello World” and information about the current version of the operating system. This page must be visible from the Internet. 
+<p> 3. EC2 CentOS should not have access to the Internet, but must have outgoing and incoming access: ICMP, TCP/22, TCP/80, TCP/443 only on the local network where EC2 Ubuntu, EC2 CentOS is located;</p>
 
-5. On EC2 Ubuntu install Docker, installation should be done according to the recommendation of the official Docker manuals.
+<p> 4. On EC2 Ubuntu, install a web server (nginx/apache); Create a web page with the text “Hello World” and information about the current version of the operating system. This page must be visible from the Internet;</p>
+
+<p> 5. On EC2 Ubuntu install Docker, installation should be done according to the recommendation of the official Docker manuals.</p>
 
 ### The configuration of the Ubuntu OS: ###
 
@@ -29,3 +30,4 @@ Tasks:
 
 ![serverCentos1](./images/Screenshot_6.jpg)
 
+The **KeyVault** is used for maintaning the passwords of Ubuntu and Centos virtual machines.
