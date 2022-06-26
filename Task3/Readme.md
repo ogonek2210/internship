@@ -33,3 +33,9 @@ Tasks:
 The **KeyVault** is used for maintaning the passwords of Ubuntu and Centos virtual machines:
 
 ![serverCentos1](./images/Screenshot_10.jpg)
+
+### Extra: ###
+1. I created the following resource for using id of the existing Ubuntu VM for transfering it private IP to the network security group of Centos VM : 
+----
+"azurerm_virtual_machine" "ubuntu_vm"
+----
