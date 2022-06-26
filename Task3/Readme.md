@@ -30,4 +30,6 @@ Tasks:
 
 ![serverCentos1](./images/Screenshot_6.jpg)
 
-The **KeyVault** is used for maintaning the passwords of Ubuntu and Centos virtual machines.
+The **KeyVault** is used for maintaning the passwords of Ubuntu and Centos virtual machines:
+
+![serverCentos1](./images/Screenshot_10.jpg)
