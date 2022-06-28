@@ -72,4 +72,14 @@ __Task 3.1.1:__
  ![docker8](./images/Screenshot_8.jpg)
  ![docker10](./images/Screenshot_10.jpg)
 
+__Task 3:__
 
+Dockerfile3:
+ ![docker11](./images/Screenshot_11.jpg)
+
+Build the docker image and run it:
+*docker build -t task3-2 -f Dockerfile3 .*
+![docker12](./images/Screenshot_12.jpg)
+
+*docker run -d -p 81:80 task3-2*
+![docker13](./images/Screenshot_13.jpg)
