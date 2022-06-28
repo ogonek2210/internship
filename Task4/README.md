@@ -49,7 +49,7 @@ __Task 2.1:__
 7. List of all running images:
  ![docker4](./images/Screenshot_4.jpg)
 
-8. Edit the web page inside container: *docker exec -it hardcore_perlman /bin/sh*
+8. Edit the web page inside the existing container: *docker exec -it hardcore_perlman /bin/sh*
    ![docker5](./images/Screenshot_5.jpg)
    ![docker6](./images/Screenshot_6.jpg)
 
