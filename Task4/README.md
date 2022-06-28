@@ -61,21 +61,7 @@ __Task 2.1:__
 
 
 __Task 3.1.1:__
-1. I have created the following *dockerfile* and *index.html* files for the integration *nginx* to the centos 7:
-
-    <div style="white-space:pre">
-    FROM centos:7
-    LABEL maintainer="Hanna Sitkevich"
-    RUN  yum -y update\
-        && yum -y install epel-release\
-        && yum -y install nginx\
-        && yum clean all && \
-            rm -rf /var/cache/yum
-    ADD index.html /usr/share/nginx/html/index.html
-    EXPOSE 80/tcp
-    CMD ["nginx", "-g daemon off;"]
-    </div>
-    <br>
+1. I have created the following *dockerfile* and *index.html* files for the integration *nginx* to the centos 7 - *"./Extra 3.1/Dockerfile3"*
 
 2. Build the docker image:
     *docker build -t task3-1 -f Dockerfile3 .*
