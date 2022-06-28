@@ -26,6 +26,9 @@ Second container should be run right after a successful run of a database contai
 </ol>
 
 __Task 1.1:__ Docker is installed via the script - *"Extra 1.1"/script-1.sh*
+
+![docker8](./images/Screenshot_7.jpg)
+
 ![docker1](./images/Screenshot_1.jpg)
 
 __Task 2.1:__
@@ -53,5 +56,5 @@ __Task 2.1:__
    ![docker5](./images/Screenshot_5.jpg)
    ![docker6](./images/Screenshot_6.jpg)
 
-9.  Check the localhost:
-![docker3](./images/Screenshot_2.jpg)
+9. Check the localhost:
+   ![docker7](./images/Screenshot_2.jpg)
