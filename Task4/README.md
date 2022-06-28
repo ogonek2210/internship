@@ -58,3 +58,32 @@ __Task 2.1:__
 
 9. Check the localhost:
    ![docker7](./images/Screenshot_2.jpg)
+
+
+__Task 3.1.1:__
+1. I have created the following *dockerfile* and *index.html* files for the integration *nginx* to the centos 7:
+
+    <div style="white-space:pre">
+    FROM centos:7
+    LABEL maintainer="Hanna Sitkevich"
+    RUN  yum -y update\
+        && yum -y install epel-release\
+        && yum -y install nginx\
+        && yum clean all && \
+            rm -rf /var/cache/yum
+    ADD index.html /usr/share/nginx/html/index.html
+    EXPOSE 80/tcp
+    CMD ["nginx", "-g daemon off;"]
+    </div>
+    <br>
+
+2. Build the docker image:
+    *docker build -t task3-1 -f Dockerfile3 .*
+
+3. Run the docker image: 
+    *docker run -d -p 80:80 task3-1*
+
+ ![docker8](./images/Screenshot_8.jpg)
+ ![docker10](./images/Screenshot_10.jpg)
+
+
