@@ -3,6 +3,7 @@
 <ol>
   <li>Install docker. (Hint: please use VMs or Clouds  for this.
     <p><b>EXTRA 1.1.</b><i> Write bash script for installing Docker. </p></i></li>
+    
   <li>Find, download and run any docker container "hello world". (Learn commands and parameters to create/run docker containers.
 <p><b>EXTRA 2.</b> <i>Use image with html page, edit html page and paste text: Username 2022</i></p></li>
   <li>Taks 3:
@@ -24,4 +25,5 @@ Second container should be run right after a successful run of a database contai
 	<p><b>EXTRA 5.1.</b> <i>Use env files to configure each service.</i></p></li>
 </ol>
 
-
+__Task 1.1:__ Docker is installed via the script - *"Extra 1.1"/script-1.sh*
+![serverCentos1sdsd](./images/Screenshot_1.jpg)
