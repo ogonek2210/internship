@@ -5,7 +5,7 @@
     <p><b>EXTRA 1.1.</b><i> Write bash script for installing Docker. </p></i></li>
     
   <li>Find, download and run any docker container "hello world". (Learn commands and parameters to create/run docker containers.
-<p><b>EXTRA 2.</b> <i>Use image with html page, edit html page and paste text: Username 2022</i></p></li>
+<p><b>EXTRA 2.1.</b> <i>Use image with html page, edit html page and paste text: Username 2022</i></p></li>
   <li>Taks 3:
     <ol>
       <li> Create your Dockerfile for building a docker image. Your docker image should run any web application (nginx, apache, httpd). Web application should be located inside the docker image. 
@@ -26,4 +26,32 @@ Second container should be run right after a successful run of a database contai
 </ol>
 
 __Task 1.1:__ Docker is installed via the script - *"Extra 1.1"/script-1.sh*
-![serverCentos1sdsd](./images/Screenshot_1.jpg)
+![docker1](./images/Screenshot_1.jpg)
+
+__Task 2.1:__
+1. Pull the "hello-world" image:
+*docker pull tutum/hello-world*
+
+2. List images:
+*docker image ls*
+![docker2](./images/Screenshot_3.jpg)
+
+3. Create image:
+   *docker build -t tutum/hello-world .*
+
+4. Build image:
+*docker run -p 80:80 -d hello-world*
+
+5. Start the image: *sudo docker run -d -p 80 tutum/hello-world*
+   
+6. It will print the new container ID (like 31e17b0746e4). Get the allocated external port: *sudo docker port 31e17b0746e4 80*
+
+7. List of all running images:
+ ![docker4](./images/Screenshot_4.jpg)
+
+8. Edit the web page inside container: *docker exec -it hardcore_perlman /bin/sh*
+   ![docker5](./images/Screenshot_5.jpg)
+   ![docker6](./images/Screenshot_6.jpg)
+
+9.  Check the localhost:
+![docker3](./images/Screenshot_2.jpg)

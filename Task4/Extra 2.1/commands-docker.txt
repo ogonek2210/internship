@@ -1,0 +1,8 @@
+1. Pull the "hello-world" image:
+docker pull tutum/hello-world
+
+2. List images:
+docker image ls
+
+3. Build image:
+docker run -p 80:80 -d hello-world
