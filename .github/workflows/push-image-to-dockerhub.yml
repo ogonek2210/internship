@@ -12,6 +12,7 @@ on:
 env:
   DOCKER_USER: ${{secrets.DOCKERHUB_USERNAME}}
   DOCKER_PASSWORD: ${{secrets.DOCKERHUB_TOKEN}}
+  REPO_NAME: ${{secrets.REPO_NAME}}
 
 jobs:
   build-container:
