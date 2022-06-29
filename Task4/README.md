@@ -83,3 +83,7 @@ I just implemented the pipeline for pushing docker image to the Docker hub - **p
 
 These is my repository in the DockerHub -
 [DockerHub](https://hub.docker.com/r/ogonek22101989/centos7-with-nginx)
+
+__Extra task 5:__
+
+All environment values are saved in the [variables.env](https://github.com/ogonek2210/DevOps_SandBox/blob/master/Task4/Extra-5/variables.env) file and docker compose file here [docker-compose.yml](https://github.com/ogonek2210/DevOps_SandBox/blob/master/Task4/Extra-5/compose.yaml)
