@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 LABEL maintainer="Hanna Sitkevich"
-RUN apt-get update -y \
-     && apt-get install apache2 -y 
+RUN apt-get update \
+     && apt-get install -y apache2 && apt-get clean
+ENV DEVOPS="HannaS"
 EXPOSE 80
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["apachectl", "-D", "FOREGROUND"]

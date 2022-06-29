@@ -60,28 +60,23 @@ __Task 2.1:__
    ![docker7](./images/Screenshot_2.jpg)
 
 
-__Extra task 3.1.1:__
+__Extra task 3:__
 1. I have created the following *dockerfile* and *index.html* files for the integration *nginx* to the centos 7:
  [Dockerfile3](https://github.com/ogonek2210/DevOps_SandBox/tree/master/Task4/Extra-3-1)
 
 2. Build the docker image:
-    *docker build -t task3-1 -f Dockerfile3 .*
+    *docker build -t task4:latest -f Dockerfile41 .*
+    ![docker15](./images/Screenshot_15.jpg)
 
 3. Run the docker image: 
-    *docker run -d -p 80:80 task3-1*
+    *docker run -d -p 80:80 task4*
+    ![docker16](./images/Screenshot_16.jpg)
 
- ![docker8](./images/Screenshot_8.jpg)
- ![docker10](./images/Screenshot_10.jpg)
+4. Output env *DEVOPS*:
+    *docker exec 7ad845dcd8d1 bash -c 'echo "$DEVOPS"'*
+    ![docker17](./images/Screenshot_17.jpg)
 
-__Extra task 3.2.1__
-
-I installed the docker compose:
-*sudo apt install docker-compose*
-
-Start docker-compose:
-
-
-__Extra task 4.1:__
+__Extra task 4:__
 
 I just implemented the pipeline for pushing docker image to the Docker hub - **push-image-to-dockerhub.yml** and using the dockerfile - 
 [Dockefile4-1](https://github.com/ogonek2210/DevOps_SandBox/tree/master/Task4/Extra-4-1)
