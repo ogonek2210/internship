@@ -1,7 +1,16 @@
+# FROM ubuntu:latest
+# LABEL maintainer="Hanna Sitkevich"
+# RUN apt-get update -y \
+#      && apt-get install apache2 -y 
+# RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+# EXPOSE 80
+# CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+
+
+
 FROM ubuntu:latest
 LABEL maintainer="Hanna Sitkevich"
 RUN apt-get update -y \
-     && apt-get install apache2 -y 
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-EXPOSE 80
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+     && apt-get install httpd apache2 nginx -y
+EXPOSE 80/TCP
+CMD ["nginx", "-g daemon off;"]
