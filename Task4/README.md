@@ -84,9 +84,14 @@ Build the docker image and run it:
 *docker run -d -p 81:80 task3-2*
 ![docker13](./images/Screenshot_13.jpg)
 
-Check that the "task3-2" docker container is working:
+Check that the docker container is working and I used this dockerfile:
+[Dockefile3-2](https://github.com/ogonek2210/DevOps_SandBox/tree/master/Task4/Basic-task-3-2)
 ![docker14](./images/Screenshot_14.jpg)
 
 __Extra task 4.1:__
 
-I just implemented the pipeline for pushing docker image to the Docker hub - **push-image-to-dockerhub.yml**
+I just implemented the pipeline for pushing docker image to the Docker hub - **push-image-to-dockerhub.yml** and using the dockerfile - 
+[Dockefile4-1](https://github.com/ogonek2210/DevOps_SandBox/tree/master/Task4/Extra-4-1)
+
+These is my repository in the DockerHub -
+[DockerHub](https://hub.docker.com/r/ogonek22101989/centos7-with-nginx)
