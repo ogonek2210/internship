@@ -34,7 +34,7 @@ jobs:
       
       # push The image to the docker hub
       - name: Build the Docker image 
-        run: docker build . --file ./Task4/Extra-4-1/Dockerfile4-1 --tag $DOCKER_USER/$REPO_NAME:${{ steps.date.outputs.date }}
+        run: docker build . --file "./Task4/Extra-4-1/Dockerfile4-1" --tag $DOCKER_USER/$REPO_NAME:${{ steps.date.outputs.date }}
 
       - name: Docker Push
         run: docker push $DOCKER_USER/$REPO_NAME:${{ steps.date.outputs.date }}
