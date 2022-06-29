@@ -61,7 +61,8 @@ __Task 2.1:__
 
 
 __Extra task 3.1.1:__
-1. I have created the following *dockerfile* and *index.html* files for the integration *nginx* to the centos 7 - *"./Extra 3.1/Dockerfile3"*
+1. I have created the following *dockerfile* and *index.html* files for the integration *nginx* to the centos 7:
+ [Dockerfile3](https://github.com/ogonek2210/DevOps_SandBox/tree/master/Task4/Extra-3-1)
 
 2. Build the docker image:
     *docker build -t task3-1 -f Dockerfile3 .*
