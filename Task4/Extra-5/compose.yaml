@@ -1,0 +1,27 @@
+services:
+  apache:
+    image: ogonek22101989/ubuntu-apache-task4:2022-06-29--56-15
+    scale: 5
+  backend:
+    build: backend
+    ports:
+      - 8080:8080
+    secrets:
+      - db-password
+  db:
+    image: mariadb:10.6.4-focal
+    restart: always
+    secrets:
+      - db-password
+    volumes:
+      - db-data:/var/lib/mysql
+    env_file:
+      - variables.env
+    expose:
+      - 3306
+      - 33060   
+volumes:
+  db-data:
+secrets:
+  db-password:
+    file: db/password.txt
