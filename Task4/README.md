@@ -60,7 +60,7 @@ __Task 2.1:__
    ![docker7](./images/Screenshot_2.jpg)
 
 
-__Task 3.1.1:__
+__Extra task 3.1.1:__
 1. I have created the following *dockerfile* and *index.html* files for the integration *nginx* to the centos 7 - *"./Extra 3.1/Dockerfile3"*
 
 2. Build the docker image:
@@ -72,7 +72,7 @@ __Task 3.1.1:__
  ![docker8](./images/Screenshot_8.jpg)
  ![docker10](./images/Screenshot_10.jpg)
 
-__Task 3:__
+__Task 3.2:__
 
 Dockerfile3:
  ![docker11](./images/Screenshot_11.jpg)
@@ -86,3 +86,7 @@ Build the docker image and run it:
 
 Check that the "task3-2" docker container is working:
 ![docker14](./images/Screenshot_14.jpg)
+
+__Extra task 4.1:__
+
+I just implemented the pipeline for pushing docker image to the Docker hub - **push-image-to-dockerhub.yml**

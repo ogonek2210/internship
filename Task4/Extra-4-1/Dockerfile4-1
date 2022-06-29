@@ -1,0 +1,11 @@
+FROM centos:7
+ENV DEVOPS=Hanna
+RUN  yum -y update\
+     && yum -y install epel-release\
+     && yum -y install nginx\
+     && yum clean all && \
+         rm -rf /var/cache/yum
+ADD ./Task4/Extra4-1/index.html /usr/share/nginx/html/index.html
+RUN echo "DEVOPS------>${DEVOPS}" | tee -a /usr/share/nginx/html/index.html
+EXPOSE 80/tcp
+CMD ["nginx", "-g daemon off;"]
