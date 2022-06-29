@@ -2,9 +2,7 @@ FROM ubuntu
 LABEL maintainer="Hanna Sitkevich"
 ENV DEVOPS=Extra_task_4_1
 RUN  sudo apt-get update -y \
-     && sudo apt-get install apache2 -y \
-     && sudo systemctl start apache2 \
-     && sudo systemctl enable apache2 
+     && sudo apt-get install apache2 -y 
 RUN echo "Value of the DEVOPS environment:------> ${DEVOPS}" >> /var/www/html/index.html
 EXPOSE 80/tcp
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
