@@ -73,21 +73,13 @@ __Extra task 3.1.1:__
  ![docker8](./images/Screenshot_8.jpg)
  ![docker10](./images/Screenshot_10.jpg)
 
-__Task 3.2:__
+__Extra task 3.2.1__
 
-Dockerfile3:
- ![docker11](./images/Screenshot_11.jpg)
+I installed the docker compose:
+*sudo apt install docker-compose*
 
-Build the docker image and run it:
-*docker build -t task3-2 -f Dockerfile3 .*
-![docker12](./images/Screenshot_12.jpg)
+Start docker-compose:
 
-*docker run -d -p 81:80 task3-2*
-![docker13](./images/Screenshot_13.jpg)
-
-Check that the docker container is working and I used this dockerfile:
-[Dockefile3-2](https://github.com/ogonek2210/DevOps_SandBox/tree/master/Task4/Basic-task-3-2)
-![docker14](./images/Screenshot_14.jpg)
 
 __Extra task 4.1:__
 

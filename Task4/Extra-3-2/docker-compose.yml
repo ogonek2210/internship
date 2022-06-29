@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    image: "ogonek22101989/centos7-with-nginx:latest"
+    environment:
+     - DEVOPS=HannaS

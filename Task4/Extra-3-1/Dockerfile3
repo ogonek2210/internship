@@ -1,11 +1,6 @@
-FROM centos:7
-ENV DEVOPS="Hanna_Sitkevich!"
-RUN  yum -y update\
-     && yum -y install epel-release\
-     && yum -y install nginx\
-     && yum clean all && \
-         rm -rf /var/cache/yum
-ADD index.html /usr/share/nginx/html/index.html
-RUN echo "!!!!!!!!DEVOPS: $DEVOPS" > /usr/share/nginx/html/index.html; /usr/sbin/nginxctl -D FOREGROUND 
-EXPOSE 80/tcp
-CMD ["nginx", "-g daemon off;"]
+FROM ubuntu:latest
+LABEL maintainer="Hanna Sitkevich"
+RUN apt-get update -y \
+     && apt-get install apache2 -y 
+EXPOSE 80
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
