@@ -83,3 +83,6 @@ Build the docker image and run it:
 
 *docker run -d -p 81:80 task3-2*
 ![docker13](./images/Screenshot_13.jpg)
+
+Check that the "task3-2" docker container is working:
+![docker14](./images/Screenshot_14.jpg)
