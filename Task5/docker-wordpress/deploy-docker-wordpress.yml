@@ -1,0 +1,70 @@
+#################################################
+# DO Community Playbooks: Docker + WordPress
+#################################################
+---
+- hosts: all
+  become: true
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+    - name: Install aptitude using apt
+      apt: name=aptitude state=latest update_cache=yes force_apt_get=yes
+
+    - name: Install required system packages
+      apt: name={{ item }} state=latest update_cache=yes
+      loop: [ 'apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'python3-pip', 'virtualenv', 'python3-setuptools']
+
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu bionic stable
+        state: present
+
+    - name: Update apt and install docker-ce
+      apt: update_cache=yes name=docker-ce state=latest
+
+    - name: Install Docker Module for Python
+      pip:
+        name: docker
+
+    - name: Create Network
+      docker_network:
+        name: wordpress
+
+    - name: Deploy Wordpress
+      docker_container:
+        name: wordpress
+        image: wordpress:latest
+        ports:
+          - "80:80"
+        networks:
+          - name: wordpress
+        volumes:
+          - wordpress:/var/www/html
+        env:
+          WORDPRESS_DB_HOST: "{{ WORDPRESS_DB_HOST }}"
+          WORDPRESS_DB_USER: "{{ WORDPRESS_DB_USER }}"
+          WORDPRESS_DB_PASSWORD: "{{ WORDPRESS_DB_PASSWORD }}"
+          WORDPRESS_DB_NAME: "{{ WORDPRESS_DB_NAME }}"
+        restart_policy: always
+
+    - name: Deploy MYSQL
+      docker_container:
+        name: db
+        image: mysql:5.7
+        networks:
+          - name: wordpress
+        volumes:
+          - db:/var/lib/mysql
+        env:
+          MYSQL_DATABASE: "{{ WORDPRESS_DB_NAME }}"
+          MYSQL_USER: "{{ WORDPRESS_DB_USER }}"
+          MYSQL_PASSWORD: "{{ WORDPRESS_DB_PASSWORD }}"
+          MYSQL_RANDOM_ROOT_PASSWORD: '1'
+        restart_policy: always
+
