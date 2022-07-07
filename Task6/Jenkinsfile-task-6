@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh '''
+                    #!/bin/bash
+                    [ -d "archive" ] && echo "The directory archive exists" || mkdir "archive"
+                    [[ -f "archive/Dockerfile3" ]] && echo "The archive/Dockerfile3 exists." ||  wget -P archive https://raw.githubusercontent.com/ogonek2210/internship/master/Task4/Extra-3/Dockerfile3
+                '''
+                sh 'echo Process of creating archive'
+                zip zipFile: 'Task6.zip', archive: false, dir: 'archive', overwrite: true
+                archiveArtifacts artifacts: 'Task6.zip', fingerprint: true
+            }
+        }
+    }
+}

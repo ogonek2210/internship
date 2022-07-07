@@ -1,0 +1,2 @@
+currentDate=`date`
+echo $currentDate
