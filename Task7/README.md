@@ -27,7 +27,8 @@
    - *sudo apt-get update*
    - *sudo apt install zabbix-agent*
    - *vi /etc/zabbix/zabbix_agentd.conf*
-   - 
+   
+   ![vm13](./images/Screenshot_4.jpg)
 
 4. Make several of your own dashboards, where to output data from your host/vm/container (one of them)
 5. Active check vs passive check - use both types.
