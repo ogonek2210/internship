@@ -27,6 +27,7 @@
    - *sudo apt-get update*
    - *sudo apt install zabbix-agent*
    - *vi /etc/zabbix/zabbix_agentd.conf*
+   - *sudo systemctl restart zabbix-agent.service*
    
    ![vm13](./images/Screenshot_4.jpg)
 
@@ -38,7 +39,7 @@
    ![vm-zabbix-4-3](./images/Screenshot_9.jpg)
 
    ![vm-1-4](./images/Screenshot_6.jpg)
-   
+
 5. Active check vs passive check - use both types.
 6. Make an agentless check of any resource (ICMP ping)
 7. Provoke an alert - and create a Maintenance instruction
