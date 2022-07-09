@@ -46,13 +46,20 @@
    
    ![vm-1-5](./images/Screenshot_11.jpg)
 
-   Latest data from VM1 with the active agent:
+   Latest data from VM1 using the active agent with the following configuration:
+   
+   ![vm-1-5-1](./images/Screenshot_14.jpg)
 
-   ![vm-1-5](./images/Screenshot_12.jpg)
+   ![vm-1-5-2](./images/Screenshot_15.jpg)
 
-   Latest data from VM2 with the passive agent:
 
-   ![vm-1-5](./images/Screenshot_13.jpg)
+   ![vm-1-5-3](./images/Screenshot_12.jpg)
+
+   Latest data from VM2 using the the passive agent with the following configuration:
+
+   ![vm-2-5-1](./images/Screenshot_16.jpg)
+
+   ![vm-2-5-2](./images/Screenshot_13.jpg)
 
 6. Make an agentless check of any resource (ICMP ping)
 7. Provoke an alert - and create a Maintenance instruction
