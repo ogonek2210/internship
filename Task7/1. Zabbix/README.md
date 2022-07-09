@@ -82,4 +82,7 @@
 
 ![task 7-5](./images/Screenshot_25.jpg)
 
-8. Set up a dashboard with infrastructure nodes and monitoring of hosts and software installed on them
+8. Set up a dashboard with infrastructure nodes and monitoring of hosts and software installed on them:
+
+![task 8-1](./images/Screenshot_26.jpg)
+
