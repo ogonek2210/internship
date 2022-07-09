@@ -70,5 +70,16 @@
 
   ![vm-3-6-4](./images/Screenshot_18.jpg)
 
-7. Provoke an alert - and create a Maintenance instruction
+7. Provoke an alert - and create a Maintenance instruction:
+
+![task 7-1](./images/Screenshot_21.jpg)
+
+![task 7-2](./images/Screenshot_22.jpg)
+
+![task 7-3](./images/Screenshot_23.jpg)
+
+![task 7-4](./images/Screenshot_24.jpg)
+
+![task 7-5](./images/Screenshot_25.jpg)
+
 8. Set up a dashboard with infrastructure nodes and monitoring of hosts and software installed on them
