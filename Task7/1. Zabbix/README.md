@@ -61,6 +61,14 @@
 
    ![vm-2-5-2](./images/Screenshot_13.jpg)
 
-6. Make an agentless check of any resource (ICMP ping)
+6. Added the agentless VM with IP 10.0.0.7 and checked it (ICMP ping):
+  ![vm-3-6-1](./images/Screenshot_17.jpg)
+
+  ![vm-3-6-2](./images/Screenshot_19.jpg)
+
+  ![vm-3-6-3](./images/Screenshot_20.jpg)
+
+  ![vm-3-6-4](./images/Screenshot_18.jpg)
+
 7. Provoke an alert - and create a Maintenance instruction
 8. Set up a dashboard with infrastructure nodes and monitoring of hosts and software installed on them
