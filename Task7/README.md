@@ -19,9 +19,11 @@
 
 ![vm-zabbix2](./images/Screenshot_2.jpg)
 
-2. Prepare VM or instances (vm1 - 10.0.0.4):
+2. Prepare VM or instances (vm1 - IP 10.0.0.4 and vm2 - IP 10.0.0.6):
 
 ![vm1](./images/Screenshot_3.jpg)
+
+![vm2](./images/Screenshot_10.jpg)
 
 3. Install Zabbix agents on previously prepared servers or VM:
    - *sudo apt-get update*
@@ -40,7 +42,18 @@
 
    ![vm-1-4](./images/Screenshot_6.jpg)
 
-5. Active check vs passive check - use both types.
+5. Active check vs passive check - use both types:
+   
+   ![vm-1-5](./images/Screenshot_11.jpg)
+
+   Latest data from VM1 with the active agent:
+
+   ![vm-1-5](./images/Screenshot_12.jpg)
+
+   Latest data from VM2 with the passive agent:
+
+   ![vm-1-5](./images/Screenshot_13.jpg)
+
 6. Make an agentless check of any resource (ICMP ping)
 7. Provoke an alert - and create a Maintenance instruction
 8. Set up a dashboard with infrastructure nodes and monitoring of hosts and software installed on them
