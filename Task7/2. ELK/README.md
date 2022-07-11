@@ -1,7 +1,7 @@
 
 # ELK: # 
 
-1. Install and configure ELK:
+1. Install and configure ELK via  [docker-compose.yml](https://github.com/ogonek2210/internship/tree/master/Task7/2.%20ELK/elk-stack):
 
 ![task1-1](./images/Screenshot_4.jpg)
 
