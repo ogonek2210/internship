@@ -1,6 +1,6 @@
 # Grafana #
 
-1. Install Grafana: 
+1. Install Grafana via docker-compose file [docker-compose.yml](https://github.com/ogonek2210/internship/tree/master/Task7/3.%20Grafana/elk%2Bgrafana%2Bprometheus): 
 
 ![task1-1](./images/Screenshot_1.jpg)
 

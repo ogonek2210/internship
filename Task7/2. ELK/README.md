@@ -1,7 +1,7 @@
 
 # ELK: # 
 
-1. Install and configure ELK via  [docker-compose.yml](https://github.com/ogonek2210/internship/tree/master/Task7/2.%20ELK/elk+mysql):
+1. Install and configure ELK via  [docker-compose.yml](https://github.com/ogonek2210/internship/tree/master/Task7/2.%20ELK/elk%2Bmysql):
 
 ![task1-2](./images/Screenshot_5.jpg)
 
