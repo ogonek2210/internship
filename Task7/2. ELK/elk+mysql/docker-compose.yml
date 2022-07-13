@@ -73,14 +73,6 @@ services:
     links:
       - esnode:elasticsearch
 
-  grafana:
-    image: grafana/grafana:latest
-    container_name: rbms-sync-grafana
-    ports:
-      - "3000:3000"
-    networks:
-      - rbms-sync-net
-
 volumes:
   esnode-data:
     driver: local
